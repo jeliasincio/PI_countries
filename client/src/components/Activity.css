@@ -1,0 +1,129 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+    background-size: cover;
+
+}
+
+.form{
+    width: 600px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 4px #94bbe9 ;
+  
+    background-size: cover;
+}
+
+.form-input{
+    background-color: #07cff75c;
+    width: 400px;
+    height: 30px;
+    margin: 15px 10px 20px 10px;
+    border-radius: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.text-input{
+    margin-left: 20px;  
+}
+
+.text-error{
+    color: red;
+}
+    
+
+.season{
+    width: 1.8em;
+    height: 1.8em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 25px;  
+}
+
+.season:checked{
+    background-color: rgb(36, 254, 2);
+}
+
+
+
+.difficulty{
+    width: 1.8em;
+    height: 1.8em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(0, 0, 0);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 40px;   
+}
+
+.difficulty:checked{
+    background-color: rgb(45, 248, 4);
+}
+
+.input-button{
+    margin-left: 170px;
+    width: 180px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #00f3fc60;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.section-options{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input-options{
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    background-color:#07f3ff ;
+    margin-left: 20px;
+    border-radius: 8px;
+    padding-left: 15px;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    
+}
+
+.options-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 20px;
+    padding-top: 5px;
+
+}
