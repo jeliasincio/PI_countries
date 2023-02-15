@@ -7,6 +7,32 @@ export function getCountries(){
     }
 }
 
+export function getCountryByName (name){
+    return async function(dispatch){
+        // try {
+            const pais = await axios.get(`/countries?name=${name}`)
+            return dispatch({type: 'GET_COUNTRY_NAME', payload: pais.data})  
+
+        // } catch (error) {
+        //    console.log(error) 
+        // }
+        
+    }
+}
+
+export function  getCountryId(id) {
+    return async function(dispatch){
+        const infoPais = await axios.get(`/countries/${id}`)
+        return dispatch({ type: 'GET_COUNTRY_ID', payload: infoPais.data})
+    }
+}
+
+export function deleteCountry(id){
+    return async function(dispatch){
+        const deletePais = await axios.delete(`/countries/${id}`)
+        return dispatch({type: 'DELETE_COUNTRY', payload: deletePais.data})
+    }
+}
 export function getActivities(){
     return async function(dispatch){
         const TodasLasActivities = await axios.get("/activities")
@@ -57,31 +83,3 @@ export function filterByPopulation (order){
 }
 
 
-
-export function getCountryByName (name){
-    return async function(dispatch){
-        // try {
-
-            const pais = await axios.get(`/countries?name=${name}`)
-            return dispatch({type: 'GET_COUNTRY_NAME', payload: pais.data})  
-
-        // } catch (error) {
-        //    console.log(error) 
-        // }
-        
-    }
-}
-
-export function  getCountryId(id) {
-    return async function(dispatch){
-        const infoPais = await axios.get(`/countries/${id}`)
-        return dispatch({ type: 'GET_COUNTRY_ID', payload: infoPais.data})
-    }
-}
-
-export function deleteCountry(id){
-    return async function(dispatch){
-        const deletePais = await axios.delete(`/countries/${id}`)
-        return dispatch({type: 'DELETE_COUNTRY', payload: deletePais.data})
-    }
-}

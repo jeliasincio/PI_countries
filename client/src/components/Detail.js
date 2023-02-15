@@ -29,7 +29,6 @@ function Detail(props) {
     return (
       <React.Fragment>
         <NavBar></NavBar>
-
         <div className="country-detail">
           {country ? (
             <div className="country-info">

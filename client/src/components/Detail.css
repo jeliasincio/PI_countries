@@ -2,11 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-
-    background-size: cover;
-  
-    
+    font-family: 'Roboto', sans-serif;   
 }
 
 .loading {
@@ -16,9 +12,6 @@
     right: 0;
     bottom: 0;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 9999;
     transition: 1s all;
     opacity: 0;
@@ -43,39 +36,32 @@
 .country-info{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 20px;
     background-color: none;
-    
 }
 
 
 .img-detail{
     width: 400px;
     height: 200px;
-    padding-left: 35rem;
-    margin-top: 17rem;
-    
+    margin-top: 3rem; 
+    padding: 10px;  
 }
 
 .description-detail{
     width: 350px;
     height: 250px;
-    margin-top: 15rem;
+    margin-top: 3rem;
     border-radius: 20px;
     padding: 10px;
-    
-    
 }
 
 .description-detail :h1{
     margin:auto;
-    margin-top: 10px; 
-      
+    margin-top: 10px;       
 }
 
 .detail-activities{
-   
+    background-color: #cde0f5;   
     background-size: cover;  
     border-radius: 20px;
     height: 210px;
@@ -84,12 +70,10 @@
 
 .titulo{
     text-align: center;
-    margin-top: 10px; 
-      
+    margin-top: 10px;      
 }
 
 .title{
     text-align: center;
-    margin-top: 10px; 
-      
+    margin-top: 10px;       
 }
