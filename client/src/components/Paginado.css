@@ -14,40 +14,35 @@
 }
 
 .number{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     list-style: none;
     border: none;    
     border-radius: 100%;
-    color: #ffffff;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;       
 }
 
-.number :hover{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
+.number:hover{
+    background-color: #04a0fa;
     font-size: 17px;
     font-weight: 800;
 }
 
 .paginado li button:focus{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     border: none;
 }
 
 .paginado li button{
-    background-color: #ffffff;
-    color: #000000;
+    list-style: none;
     font-size: 15px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }

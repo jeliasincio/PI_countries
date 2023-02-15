@@ -137,12 +137,9 @@ function Home() {
         </select>
 
         <div>
-          <button
-            onClick={(ev) => {
+          <button onClick={(ev) => {
               handleClick(ev);
-            }}
-            className="bfiltro"
-          >
+            }} className="bfiltro">
             Actualizar
           </button>
         </div>

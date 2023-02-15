@@ -49,10 +49,10 @@
     font-weight: 600;
 }
 @keyframes banner{
-    0%{background-image: url("../img/5.webp"); }
-    25%{background-image: url("../img/4.webp"); }
-    26%{background-image: url("../img/3.webp"); }
-    50%{background-image: url("../img/2.webp"); }
+    0%{background-image: url("../img/2.webp"); }
+    25%{background-image: url("../img/3.webp"); }
+    26%{background-image: url("../img/4.webp"); }
+    50%{background-image: url("../img/5.webp"); }
     51%{background-image: url("../img/1.webp"); }
-    75%{background-image: url("../img/2.webp"); }
+    75%{background-image: url("../img/4.webp"); }
 }

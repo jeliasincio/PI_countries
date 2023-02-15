@@ -23,13 +23,13 @@
     cursor: pointer;
 }
 .section:hover{
-    background-color: rgb(107, 159, 189);
+    background-color: #04a0fa;
     border-radius: 5px solid #fff;
     border-radius: 5px;
 }
 
 .cards {
-    /* padding-right: 70px; */
+    padding-right: 70px;
     margin-top: 70px;
     width: 100%;
     display: flex;
@@ -44,9 +44,9 @@
     box-sizing: border-box;
     appearance: none;
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid #04a0fa;
     border-radius: 0.6em;
-    color: rgb(255, 255, 255);
+    color: #04a0fa;
     cursor: pointer;
     display: flex;
     align-self: center;
@@ -59,9 +59,6 @@
     text-transform: uppercase;
     font-family: MedievalSharp;
     font-weight: 700;
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(45deg, rgb(255, 255, 255) 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     transition: background 300ms ease-in-out;
@@ -71,10 +68,10 @@
     margin: 10px 5px 5px 5px;
     box-sizing: border-box;
     appearance: none;
-    background-color: rgba(255, 255, 255, 0.495);
+    background-color: #04a0fa;
     border: 2px solid #fcfcfc7a;
     border-radius: 0.6em;
-    color: rgba(255, 255, 255, 0.424);
+    color: #fff;
     cursor: pointer;
     display: flex;
     align-self: center;
@@ -88,7 +85,6 @@
     font-family: MedievalSharp;
     font-weight: 700;
     border-color: rgb(255, 255, 255);
-    background-image: linear-gradient(45deg, rgb(255, 255, 255) 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
     transition: background 300ms ease-in-out;

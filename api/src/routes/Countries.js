@@ -2,7 +2,7 @@ const { Router } = require("express");
 // const { getCountriesHandler, getCountryHandler } = require("../handlers/countriesHandlers");
 const axios = require('axios')
 const router = Router()
-const {Op,Country, Activity} = require('../db')
+const {Country, Activity} = require('../db')
 
 // router.get("/", getCountriesHandler);
 // router.get("/:id", getCountryHandler);
