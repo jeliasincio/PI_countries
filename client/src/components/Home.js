@@ -161,6 +161,7 @@ function Home() {
                 name={e.name}
                 id={e.id}
                 continent={e.continent}
+                area={e.area}
               />
             );
           })}

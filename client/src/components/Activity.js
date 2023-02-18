@@ -39,8 +39,6 @@ const validate = (input) =>{
         button.disabled= false
     }
     
-
-
     if(input.countries.length > 1){
 
         for(let i = 0; i < input.countries.length; i++){
@@ -58,8 +56,6 @@ const validate = (input) =>{
     return errors
 }
 
-
-
 function onlyOne(value){
     var x = document.getElementsByClassName('season');
     var i;
@@ -76,8 +72,6 @@ function onlyOne(value){
         
         }
     
-
-
 function Activity() {
 
     useEffect(() =>{
@@ -90,8 +84,6 @@ function Activity() {
 
     const AllCountries = useSelector((state) => state.Countries)
     
-     
-
     const [input, setInput] = useState({
         name:'',
         difficulty:'',
@@ -99,8 +91,6 @@ function Activity() {
         season:'',
         countries:[]
     })
-
-
 
     const [errors, setErrors] = useState({})
 
@@ -117,7 +107,6 @@ function Activity() {
         }))
 
         }
-
 
     const handleCheckBoxSeason = (e) =>{
        
@@ -143,10 +132,7 @@ function Activity() {
                 season: ''
             })
         }
-        
-
         }
-
 
     const handleCheckBoxDifficulty = (e) =>{
         
@@ -208,75 +194,6 @@ function Activity() {
     }
     }
 
-    
-
-    // const handleSubmit = (e) =>{
-    //     e.preventDefault()
-    //     dispatch(postActivity(input))
-    //     alert('Actividad Creada')
-    //     history.push('/home')
-    // }
-
-    // return (input)
-
-
-
-    // const handleSelectCountry = (e) =>{
-    //         if(input.countries.length === 0){
-    //         setInput({
-    //             ...input,
-    //             countries:[...input.countries, e.target.value] 
-    //         })
-    //         setErrors(validate({
-    //             ...input,
-    //             countries: e.target.value
-    //         }))
-    //     }else{
-    //         for(let i = 0; i < input.countries.length; i++){
-    //             for(let j = i + 1; j < input.countries.length; j++){
-    //                 if(input.countries[i] === input.countries[j]){
-
-    //                     setErrors(validate({
-    //                         ...input,
-    //                         countries: 'No se pueden repetir los paises'
-
-    //                     }))
-    //                 }else{
-    //                     setInput({
-
-    //                         ...input,
-    //                         countries:[...input.countries, e.target.value]
-    //                     })
-    //                     setErrors(validate({
-
-    //                         ...input,
-    //                         countries: e.target.value
-    //                     }))
-    //                 }
-    //             }
-
-    //         }
-    //     }
-    // }
-
-    
-
-
-
-    // const handleSelectCountry = (e) =>{
-        
-    //     setInput({
-    //         ...input,
-    //         countries:[...input.countries, e.target.value]
-    //     })
-    //     setErrors(validate({
-    //         ...input,
-    //         countries: e.target.value
-    //     }))
-
-    // }
-
-
     function handleSubmit(e) {
 
         e.preventDefault()
@@ -295,9 +212,6 @@ function Activity() {
 
     }
     
-
-
-
     const handleInputDelete = (element) =>{
         setInput({
             ...input,
@@ -309,16 +223,12 @@ function Activity() {
                 countries: []
             }))
         }        
-
     } 
           
-
       return (
         <React.Fragment>
         <NavBar></NavBar>
             <div className='form' >
-
-        
 
         <form  onSubmit={(e) => handleSubmit(e)}>
 
@@ -336,8 +246,7 @@ function Activity() {
                     <p className='text-error'>{errors.name}</p>
                 )
             }            
-            
-            
+                    
             <label>
             Duracion</label> <br/>
             <input className='form-input'
@@ -352,7 +261,6 @@ function Activity() {
                     <p className='text-error'>{errors.duration}</p>
                 )
             }
-
 
             <label >Temporada</label><br/>
             <label className='text-input'> Primavera 🌸

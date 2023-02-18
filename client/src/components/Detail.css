@@ -16,9 +16,11 @@
     transition: 1s all;
     opacity: 0;
 }
+
 .loading.show {
     opacity: 1;
 }
+
 .loading .spin {
     border: 3px solid hsla(185, 100%, 62%, 0.2);
     border-top-color: #94bbe9;
@@ -27,6 +29,7 @@
     height: 3em;
     animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -36,14 +39,16 @@
 .country-info{
     display: flex;
     flex-direction: row;
-    background-color: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center; 
+    background-color: none;    
 }
-
 
 .img-detail{
     width: 400px;
-    height: 200px;
-    margin-top: 3rem; 
+    height: 200px;    
     padding: 10px;  
 }
 

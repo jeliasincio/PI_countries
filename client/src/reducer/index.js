@@ -14,7 +14,6 @@ export default function rootReducer(state= initialState, action){
                 Countries: action.payload,
                 allCountries: action.payload
             }
-
             
         case 'GET_ACTIVITIES':
             return{
@@ -22,13 +21,12 @@ export default function rootReducer(state= initialState, action){
                 Activities:action.payload
             } 
 
-
         case 'GET_COUNTRY_NAME':
             return{
                 ...state,
                 Countries: action.payload
             }
-            
+           
             
         case 'GET_COUNTRY_ID':
             return{
@@ -39,9 +37,7 @@ export default function rootReducer(state= initialState, action){
         case 'POST_ACTIVITY':
             return{
                 ...state
-            }    
-
-            
+            }      
 
         case 'COUNTRY_BY_TYPE':
             const allCountries = state.allCountries
@@ -51,18 +47,12 @@ export default function rootReducer(state= initialState, action){
                 Countries: countriesFiltered
             }
 
-
-
-
         case 'ACTIVITY_BY_NAME':
             return{
                 ...state,
                 Countries: action.payload
             } 
-            
-
-
-            
+ 
         case 'ACTIVITY_BY_ORDER':
 
             const sortArray = action.payload === 'Asc' ?
@@ -89,8 +79,7 @@ export default function rootReducer(state= initialState, action){
                 ...state,
                 Countries:sortArray
             }
-
-            
+ 
         case 'FILTER_BY_POPULATION':
                 const sortPopulation = action.payload === 'Asc' ?
                 state.Countries.sort((a,b) => a.population - b.population) :
@@ -119,9 +108,7 @@ export default function rootReducer(state= initialState, action){
                     ...state,
                     Countries: sortArea
                 }
-                                    
-
-                            
+                                                        
         case 'FILTER_BY_ACTIVITY':
             const allCountries2 = state.allCountries
             const countriesFiltered2 = action.payload === 'all' ? allCountries2 : allCountries2.filter(item => item.activities.includes(action.payload))
@@ -136,12 +123,6 @@ export default function rootReducer(state= initialState, action){
                 ...state,
                 Countries: state.Countries.filter(item => item.id !== action.payload)
             }
-            
-       
-
-
-
-
 
         default:
             return state
